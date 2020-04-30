@@ -1,13 +1,13 @@
 {
   "name": "kk-blog",
   "author": "Kai Wang <bruce1198@gmail.com>",
-  "homepage": "http://kk.tipsflow.co/",
+  "homepage": "http://kkswang.github.io/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bruce1198/pages.git"
+    "url": "git://github.com/kkswang/pages.git"
   },
   "bugs": {
-    "url": "https://github.com/bruce/pages/issues"
+    "url": "https://github.com/kkswang/pages/issues"
   },
   "engines": {
     "node": ">= 0.10.0"

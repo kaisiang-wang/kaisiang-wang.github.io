@@ -1,30 +1,100 @@
-{% for post in paginator.posts %}
-<article class="hentry">
-  <header>
-    {% if post.image.feature %}
-      <div class="entry-image-index">
-        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}"></a>
-      </div><!-- /.entry-image -->
-    {% endif %}
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
-      {% if site.reading_time %}
-      <span class="entry-reading-time">
-        <i class="fa fa-clock-o"></i>
-        {% include read-time-index.html %}
-      </span><!-- /.entry-reading-time -->
-      {% endif %}
-    </div><!-- /.entry-meta -->
-    {% if post.link %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" class="permalink" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
-    {% else %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
-    {% endif %}
-  </header>
-  <div class="entry-content">
-    {{ post.content }}
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-{% endfor %}
-
-{% include pagination.html %}
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kai Wang</title>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/basic.css">
+</head>
+<body>
+	<div class="nav">
+		<div class="menu">
+			<div class="menu-item">
+				Kai Wang
+			</div>
+			<div class="menu-item">
+				Profile
+			</div>
+			<div class="menu-item">
+				Projects
+			</div>
+			<div class="menu-item">
+				Writing
+			</div>
+			<div class="menu-item">
+				Let's Work Together
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="header">
+			<div class="word">
+				<div class="welcome1">WEL</div>
+				<div class="welcome2">COME</div>
+				<div class="intro"><span>Hello.</span> I’m a designer who codes. I strive to create simple, original, and impactful user experiences. I take on projects of all sizes; from web design and build, to product and system design. I’ve led the design and creative direction of products, teams, and design systems at Adobe and WeWork in New York City. I am now a freelance web designer and developer based in Los Angeles. I'm the author of Laying the Foundations and founder of Club of the Waves. Please do say hello — I look forward to hearing about your project.</div>
+			</div>
+			<div class="pic"></div>
+		</div>
+		<div class="bk">
+			<div class="margin">
+				<div class="project-gp">
+					<div class="col1">
+						<div class="project-bk">
+							<div class="pic"></div>
+							<div class="container">
+								<div class="job">Programmer</div>
+								<div class="title">TipsFlow</div>
+								<div class="more">Learn More</div>
+							</div>
+						</div>
+						<div class="project-bk">
+							<div class="pic"></div>
+							<div class="container">
+								<div class="job">Programmer</div>
+								<div class="title">KKAPP</div>
+								<div class="more">Learn More</div>
+							</div>
+						</div>
+					</div>
+					<div class="col2">
+						<div class="project-bk">
+							<div class="pic"></div>
+							<div class="container">
+								<div class="job">Programmer</div>
+								<div class="title">FLUTTER</div>
+								<div class="more">Learn More</div>
+							</div>
+						</div>
+						<div class="project-bk">
+							<div class="pic"></div>
+							<div class="container">
+								<div class="job">Programmer</div>
+								<div class="title">Verilog</div>
+								<div class="more">Learn More</div>
+							</div>
+						</div>
+					</div>
+					<div class="col3">
+						<div class="project-bk">
+							<div class="pic"></div>
+							<div class="container">
+								<div class="job">Programmer</div>
+								<div class="title">JAVA</div>
+								<div class="more">Learn More</div>
+							</div>
+						</div>
+						<div class="project-bk">
+							<div class="pic"></div>
+							<div class="container">
+								<div class="job">Programmer</div>
+								<div class="title">C/C++</div>
+								<div class="more">Learn More</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
