@@ -11,19 +11,18 @@
 
 {% include browser-upgrade.html %}
 
-{% if page.image.feature %}
-<div class="entry-header">
-  {% if page.image.credit %}<div class="image-credit">Image source: {% if page.image.creditlink %}<a href="{{ page.image.creditlink }}">{% endif %}{{ page.image.credit }}{% if page.image.creditlink %}</a>{% endif %}</div><!-- /.image-credit -->{% endif %}
-  <div class="entry-image">
-    <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
-  </div><!-- /.entry-image -->
-</div><!-- /.entry-header -->
-{% endif %}
-
+<div class="sidebar"></div>
 <div class="content">
-  <div class="back">
-    Home
-    <div class="bot-border"></div>
+  <div class="bar">
+    <div class="home">
+      Home
+      <div class="bot-border"></div>
+    </div>
+    <div class="back">
+      Back
+      <div class="bot-border"></div>
+    </div>
+    <div class="menu-btn"><i class="fas fa-bars"></i></div>
   </div>
   <div class="title">{{ page.title }}</div>
   <div class="detail">

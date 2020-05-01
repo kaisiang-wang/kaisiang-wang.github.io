@@ -1,0 +1,155 @@
+I"�<p><img src="/images/apache.png" alt="image of Apache" /></p>
+
+<p><br />
+<br />
+Owning your personal website is cool, you can share your amazing stuffs on it, run a bussiness through it, and do everything you want with it.</p>
+
+<p><br /></p>
+<h3 id="what-circumstance-should-you-host-your-website-by-your-own">What circumstance should you host your website by your own?</h3>
+<p>There’re tons of convenient frameworks that others have already done for you to easily build a website, like <a href="https://www.wix.com/">Wix</a> or <a href="https://wordpress.com/">Wordpress</a>.</p>
+
+<p><br /></p>
+<h3 id="what-is-apache">What is <a href="https://httpd.apache.org/">Apache</a>?</h3>
+<p>Apache Web Server is a software package that turns a computer into an HTTP server. That is, it sends web pages – stored as HTML files – to people on the internet who request them. It is open-source software, which means it can be used and modified freely.</p>
+
+<p><br /></p>
+<blockquote>
+  <p>The whole tutorial is based on linux, so make sure you have any access to a linux machine.</p>
+</blockquote>
+
+<p><br /></p>
+<h1 id="well-lets-start-off">Well, let’s start off!</h1>
+
+<p><br /></p>
+<h3 id="prerequisites">Prerequisites</h3>
+
+<p><br />
+A system running Ubuntu 18.04 LTS</p>
+
+<p>An internet connection</p>
+
+<p>Access to a user account with sudo privileges</p>
+
+<p><br /></p>
+<h3 id="notice">Notice</h3>
+
+<p><br />
+Before installing new software, it’s a good idea to refresh your local software package database to make sure you are accessing the latest versions. This helps cut down on the time it takes to update after installation, and it also helps prevent zero-day exploits against outdated software.</p>
+
+<p><br />
+open a terminal and type</p>
+
+<p><br /></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update
+</code></pre></div></div>
+<p>Let the package manager finish updating.</p>
+
+<p><br /></p>
+<h3 id="1-install-apache-on-your-machine">1. Install Apache on your machine</h3>
+
+<p><br />
+To install the Apache package on Ubuntu, use the command:</p>
+
+<p><br /></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>apache2
+</code></pre></div></div>
+<p>The system prompts for confirmation – do so, and allow the system to complete the installation.
+<img src="/images/install-apache1.png" alt="image of install apache1" /></p>
+
+<p><br /></p>
+<h3 id="2-verify-apache-installation">2. Verify Apache Installation</h3>
+
+<p><br />
+To verify Apache was installed correctly, open a web browser and type in the address bar:</p>
+
+<p><br />
+<a href="http://localhost">http://localhost</a></p>
+
+<p><br />
+The web browser should open a page labeled “Apache2 Ubuntu Default Page,” as in the image below:
+<img src="/images/install-apache2.png" alt="image of install apache1" /></p>
+
+<p><br /></p>
+<h3 id="3-apache-service-controls">3. Apache Service Controls</h3>
+
+<p><br />
+When managing a web server, it’s helpful to have some level of control over the service. You’ll probably find yourself reloading or restarting Apache quite frequently, as you make configuration changes and test them. However, it’s also helpful to be able to stop (and start) the Apache service as needed.</p>
+
+<p><br />
+This operation uses the systemctl command, with a series of switches:</p>
+
+<p><br />
+Stop Apache:</p>
+
+<p><br /></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl stop apache2.service
+</code></pre></div></div>
+<p><br />
+Start Apache:</p>
+
+<p><br /></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl start apache2.service
+</code></pre></div></div>
+<p><br />
+Restart Apache:</p>
+
+<p><br /></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl restart apache2.service
+</code></pre></div></div>
+<p><br />
+Reload Apache:</p>
+
+<p><br /></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl reload apache2.service
+</code></pre></div></div>
+
+<p><br /></p>
+<h3 id="4-apache-configuration-files-directories-and-modules">4. Apache Configuration Files, Directories and Modules</h3>
+
+<p><br /></p>
+<h4 id="directories">Directories</h4>
+
+<p><br />
+After installing, Apache by default creates a document root directory at <strong>/var/www/html</strong>.</p>
+
+<p><br />
+Any files that you place into this directory are available to Apache to distribute over the network. Which means, this is the place where you copy web page files you want to publish. This is also where you would want to install content management systems, such as WordPress.</p>
+
+<p><br /></p>
+<h4 id="configuration-files">Configuration Files</h4>
+<p>As mentioned above, website content is stored in the/var/www/html/directory. You can create subdirectories within this location for each different website hosted on your server.</p>
+
+<p><br />
+Apache creates log files for any errors it generates in the file /var/log/apache2/error.log.</p>
+
+<p><br />
+It also creates access logs for its interactions with clients in the file /var/log/apache2/access.log.</p>
+
+<p><br />
+Like many Linux-based applications, Apache functions through the use of configuration files. They are all located in the /etc/apache2/ directory.</p>
+
+<p><br />
+Here’s a list of other essential directories:</p>
+
+<p><br />
+<strong>/etc/apache2/apache2.conf</strong> – This is the main Apache configuration file and controls everything Apache does on your system. Changes here affect all the websites hosted on this machine.
+<br />
+<strong>/etc/apache2/ports.conf</strong> – The port configuration file. You can customize the ports Apache monitors using this file. By default, Port 80 is configured for http traffic.
+<strong>/etc/apache2/sites-available</strong> – Storage for Apache virtual host files. A virtual host is a record of one of the websites hosted on the server.</p>
+
+<p><br />
+<strong>/etc/apache2/sites-enabled</strong> – This directory holds websites that are ready to serve clients. The a2ensite command is used on a virtual host file in the sites-available directory to add sites to this location.
+There are many directories and configuration files, which are detailed in the Apache Ubuntu documentation. These can be used to add modules to enhance Apache’s functionality, or to store additional configuration information.</p>
+
+<p><br /></p>
+<h4 id="modules">Modules</h4>
+<p>If you intend to work with software modules – applications that expand or enhance the functionality of Apache – you can enable them by using:</p>
+
+<p><br /></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>a2enmod name_of_module
+</code></pre></div></div>
+<p>To disable the module:
+<br /></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>a2dismod name_of_module
+</code></pre></div></div>
+:ET

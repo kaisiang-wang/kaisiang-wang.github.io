@@ -1,15 +1,70 @@
+pre {
+    font-size: 20px;
+}
+code {
+    font-size: 20px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.highlighter-rouge {
+    font-size: 20px;
+}
 .content {
     width: 600px;
     margin: 0 auto;
 }
-.back {
-    width: fit-content;
+.sidebar {
+    position: fixed;
+    right: 0px;
+    top: 50px;
+    width: 300px;
+    height: fit-content;
+    padding: 5px 20px;
+    border-left: 2px solid #ccc;
+    z-index: 999;
+}
+.line {
+    color: #aaa;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.select {
+    color: black;
+}
+.h1 {
+    font-size: 20px;
+}
+.h2 {
+    font-size: 16px;
+}
+.h4 {
+    margin-left: 20px;
+}
+.line:hover {
+    color: black;
+}
+.bar {
+    display: table;
+    height: fit-content;
+    width: 100%;
     margin-top: 50px;
+}
+.back, .home {
+    float: left;
+    width: fit-content;
     font-size: 40px;
     text-transform: uppercase;
     cursor: pointer;
+    margin-right: 20px;
 }
 .back:hover .bot-border {
+    width: 100%;
+}
+.home:hover .bot-border {
     width: 100%;
 }
 .bot-border {
@@ -17,6 +72,21 @@
     height: 1px;
     background: black;
     transition: 0.4s;
+    transform: none;
+}
+.bar .menu-btn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    line-height: 55px;
+    text-align: center;
+    color: white;
+    background-color: #f00658;
+    font-size: 30px;
+    display: none;
+    z-index: 1000;
+    cursor: pointer;
 }
 .title {
     margin-top: 100px;
@@ -52,4 +122,29 @@
     text-align: center;
     font-size: 24px;
     line-height: 40px;
+}
+@media (max-width: 1250px) {
+    .bar .menu-btn {
+        display: block;
+        right: 20px;
+        top: 50px;
+    }
+    .sidebar {
+        right: -305px;
+        top: 100px;
+        display: block;
+        border: none;
+        background: white;
+        box-shadow: 0 0 5px #00000070;
+        transition: 0.2s;
+    }
+    .show {
+        right: 0;
+    }
+}
+@media (max-width: 620px) {
+    .content {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
 }

@@ -1,0 +1,33 @@
+I"<p><img src="/images/apache.png" alt="image of Apache" /></p>
+
+<p><br />
+<br />
+Owning your personal website is cool, you can share your amazing stuffs on it, run a bussiness through it, and do everything you want with it.</p>
+
+<p><br /></p>
+<h3 id="what-circumstance-should-you-host-your-website-by-your-own">What circumstance should you host your website by your own?</h3>
+<p>There’re tons of convenient frameworks that others have already done for you to easily build a website, like <a href="https://www.wix.com/">Wix</a> or <a href="https://wordpress.com/">Wordpress</a>.</p>
+
+<p><br /></p>
+<h3 id="what-is-apache">What is <a href="https://httpd.apache.org/">Apache</a>?</h3>
+<p>Apache Web Server is a software package that turns a computer into an HTTP server. That is, it sends web pages – stored as HTML files – to people on the internet who request them. It is open-source software, which means it can be used and modified freely.</p>
+
+<p><br /></p>
+<blockquote>
+  <p>The whole tutorial is based on linux, so make sure you have any access to a linux machine.</p>
+</blockquote>
+
+<p><br /></p>
+<h1 id="well-lets-start-off">Well, let’s start off!</h1>
+
+<p><br /></p>
+<h3 id="prerequisites">Prerequisites</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- A system running Ubuntu 18.04 LTS
+- An internet connection
+- Access to a user account with sudo privileges
+</code></pre></div></div>
+
+<p><br /></p>
+<h3 id="1-install-apache-on-your-machine">1. Install Apache on your machine</h3>
+
+:ET
