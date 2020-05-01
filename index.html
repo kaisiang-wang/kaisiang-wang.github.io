@@ -18,59 +18,26 @@ comments: false
 	<div class="bk">
 		<div class="margin">
 			<div class="project-gp">
+				{% for project in site.categories.projects %}
+				{% if forloop.first %}
 				<div class="col1">
-					<div class="project-bk">
-						<div class="pic blue"></div>
-						<div class="container">
-							<div class="job">Programmer</div>
-							<div class="title">TipsFlow</div>
-							<div class="more">Learn More</div>
-						</div>
-					</div>
-					<div class="project-bk">
-						<div class="pic yellow"></div>
-						<div class="container">
-							<div class="job">Programmer</div>
-							<div class="title">KKAPP</div>
-							<div class="more">Learn More</div>
-						</div>
-					</div>
+				{% elsif forloop.index0 == 2 %}
 				</div>
 				<div class="col2">
-					<div class="project-bk">
-						<div class="pic black"></div>
-						<div class="container">
-							<div class="job">Programmer</div>
-							<div class="title">FLUTTER</div>
-							<div class="more">Learn More</div>
-						</div>
-					</div>
-					<div class="project-bk">
-						<div class="pic red"></div>
-						<div class="container">
-							<div class="job">Programmer</div>
-							<div class="title">Verilog</div>
-							<div class="more">Learn More</div>
-						</div>
-					</div>
+				{% elsif forloop.index0 == 4 %}
 				</div>
 				<div class="col3">
-					<div class="project-bk">
-						<div class="pic green"></div>
-						<div class="container">
-							<div class="job">Programmer</div>
-							<div class="title">JAVA</div>
-							<div class="more">Learn More</div>
-						</div>
+				{% endif %}
+				<div class="project-bk">
+					<div class="url">{{ site.url }}{{ project.url }}</div>
+					<div class="pic {{ project.color }}"></div>
+					<div class="container">
+						<div class="job">Programmer</div>
+						<div class="title">{{ project.title }}</div>
+						<div class="more">Learn More</div>
 					</div>
-					<div class="project-bk">
-						<div class="pic mint"></div>
-						<div class="container">
-							<div class="job">Programmer</div>
-							<div class="title">C/C++</div>
-							<div class="more">Learn More</div>
-						</div>
-					</div>
+				</div>
+				{% endfor %}
 				</div>
 			</div>
 		</div>
@@ -82,7 +49,8 @@ comments: false
 	<div class="bk2">
 		<div class="margin">
 			<div class="writing-gp">
-			{% for post in site.posts %}
+			{% assign sorted = (site.categories.writings | sort: 'date') | reverse %}
+			{% for post in sorted %}
 				{% assign remainder = forloop.index0 | modulo: 2 %}
 				{% if remainder == 0 %}
 					<div class="col">
@@ -92,7 +60,10 @@ comments: false
 							<div class="container">
 								<div class="date">{{ post.date | date: "%B %d, %Y" }}</div>
 								<div class="title">{{ post.title }}</div>
-								<div class="more">Read Now</div>
+								<div class="more">
+									Read Now
+									<div class="bot-border"></div>
+								</div>
 							</div>
 						</div>
 				{% else %}
@@ -102,7 +73,10 @@ comments: false
 							<div class="container">
 								<div class="date">{{ post.date | date: "%B %d, %Y" }}</div>
 								<div class="title">{{ post.title }}</div>
-								<div class="more">Read Now</div>
+								<div class="more">
+									Read Now
+									<div class="bot-border"></div>
+								</div>
 							</div>
 						</div>
 					</div>

@@ -115,6 +115,7 @@
     box-shadow: 0 2px 3px #00000070;
 }
 .project-bk .title {
+    line-height: 1;
     transition: 0.2s;
 }
 .project-bk:hover .title {
@@ -179,7 +180,11 @@
     text-transform: uppercase;
     transition: 0.4s;
 }
+.writing-bk:hover .bot-border {
+    width: 100%;
+}
 .writing-bk .more {
+    width: fit-content;
     margin-top: 20px;
     color: #f00658;
 }

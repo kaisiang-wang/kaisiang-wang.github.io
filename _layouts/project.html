@@ -1,0 +1,31 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<link rel="stylesheet" href="{{ site.url }}/assets/css/project.css">
+{% include head.html %}
+</head>
+
+<body>
+
+{% include browser-upgrade.html %}
+{% include navigation.html %}
+
+<div class="content">
+    <div class="container">
+        <div class="title">{{ page.title }}</div>
+        <div class="desc">{{ page.description }}</div>
+    </div>
+    <div class="bk">
+        <div class="margin">
+            {{ content }}
+        </div>
+     </div>
+</div>
+
+{% include scripts.html %}	        
+<script src="{{ site.url }}/assets/js/project.js"></script>
+</body>
+</html>
