@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-01T09:44:26+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">KaiCanHelp</title><subtitle>Describe your website here.</subtitle><entry><title type="html">Second Writing</title><link href="http://localhost:4000/second-writing" rel="alternate" type="text/html" title="Second Writing" /><published>2020-05-01T00:00:00+08:00</published><updated>2020-05-01T00:00:00+08:00</updated><id>http://localhost:4000/second-writing</id><content type="html" xml:base="http://localhost:4000/second-writing"></content><author><name></name></author><category term="sample post" /><summary type="html"></summary></entry><entry><title type="html">What is a Design System?</title><link href="http://localhost:4000/first-writing" rel="alternate" type="text/html" title="What is a Design System?" /><published>2020-04-30T00:00:00+08:00</published><updated>2020-04-30T00:00:00+08:00</updated><id>http://localhost:4000/first-writing</id><content type="html" xml:base="http://localhost:4000/first-writing">&lt;p&gt;The path to success with a design system starts with every member of your team understanding what design systems are and how they can help. This understanding will help you all work better together, and it will help you pitch and gain support for creating a design system at your company.
+&lt;br /&gt;
+&lt;br /&gt;
+A design system is hard to summarise. It’s perhaps easier to explain why design systems are important, and what they help us to do, than to explain exactly what they are. However, here’s my attempt at a definition:
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;what-is-a-design-system&quot;&gt;What is a design system?&lt;/h3&gt;
+&lt;p&gt;Design systems bring order and consistency to digital products. They help to protect the brand, elevate the user experience, and increase the speed and efficiency of how we design and build products. They are a source of truth and a system of record for our design decisions. They hold us to high standards, keep teams on the same page, and help to onboard new team members. They document the why, when, where, and how.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+I should stress that the design, build, and “rules” of a system are not set in stone — they are a constant work in progress, open to iteration to improve, adapt, and scale.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Designing and building on-brand, quality, and consistent digital products at scale is hard. It’s even harder when your designers and engineers span different product teams, departments, and locations. Success requires more than an assortment of Photoshop, Sketch, or Figma files, style guides, a print brand book, pattern libraries, and whatever else your team may be working from. You need a single source of truth.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;img src=&quot;/images/book.png&quot; alt=&quot;Image of Yaktocat&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;why-are-design-systems-important&quot;&gt;Why are design systems important?&lt;/h3&gt;
+&lt;p&gt;Here are just some of the things design systems help us with:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-efficiency-and-speed&quot;&gt;1. Efficiency and speed&lt;/h3&gt;
+&lt;p&gt;Design systems allow us to work faster and more efficiently. They streamline the design and development process — decreasing the amount of time it takes to design, build, and ship new websites, products, and features. They also enable teams to rapidly prototype and experiment with ideas in high fidelity — ultimately saving the business time and money.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2-consistency-and-user-experience&quot;&gt;2. Consistency and user experience&lt;/h3&gt;
+&lt;p&gt;Design systems help us design and build on-brand, quality digital products. Rather than working with a variety of styles and slightly differing approaches, teams are able to follow guidelines and stay consistent. This ensures interfaces are more predictable and accessible, which fosters trust in users and helps with conversion and retention.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;3-creating-stronger-brands&quot;&gt;3. Creating stronger brands&lt;/h3&gt;
+&lt;p&gt;Design systems help weave brand identity throughout a product in a consistent and maintainable way. I’m a big believer that brand plays a crucial role in design systems. This is why I recommend thinking and designing holistically — considering the brand and product as a whole, as opposed to tackling problems one-by-one and hoping the pieces will fit.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;4-they-free-us-to-focus-on-what-matters&quot;&gt;4. They free us to focus on what matters&lt;/h3&gt;
+&lt;p&gt;Design systems help designers and engineers spend less time needlessly creating the same things over and over — slightly differently every time — and more time focusing on user research, problem-solving, and building great products. They also help keep feedback focused on the user experience, as opposed to debating padding, colors, and type choices.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;5-organisation&quot;&gt;5. Organisation&lt;/h3&gt;
+&lt;p&gt;Design systems keep our work organised, which makes everything easier — from accessing common design elements in a master library, to using a uniform approach for the structure and naming conventions in the code, to ease of maintenance, iteration, and syncing of the design and code.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;6-speaking-the-same-language&quot;&gt;6. Speaking the same language&lt;/h3&gt;
+&lt;p&gt;Design systems help our teams communicate more clearly by establishing naming conventions and consistent terminology across the design and code.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;7-source-of-truth&quot;&gt;7. Source of truth&lt;/h3&gt;
+&lt;p&gt;Design systems and documentation are a source of truth for the whole team. A well-designed, implemented, and maintained design system sets high standards for your product and your process. Everyone becomes accountable for upholding these standards.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;when-do-we-need-design-systems&quot;&gt;When do we need design systems?&lt;/h3&gt;
+&lt;p&gt;Design systems are always useful, but the “need” for a design system varies greatly depending on the nature of the business, product, or project.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+It’s a reasonably common experience for design agencies, small companies, and freelancers to design and build without a design system, then move on. This is often fine, and it works for many companies. The resulting product may be online for only a couple of years before it’s replaced when change is needed. There’s nothing inherently wrong with that process. It’s cost-effective, simple, and fast.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Design systems are useful when companies aim to iteratively work on a product over time — to not just build once, and replace later. This is why they’re more frequently needed for products than marketing websites.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Design systems are especially useful when a team of people are working on the same product. I can’t stress this point enough.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“Software is often built by teams — sometimes incredibly large teams — of people. The challenge to create coherent experiences multiplies exponentially as more people are added to the mix. Also, over time, no matter how consistent or small a team is, different people will contribute new solutions and styles, causing experiences to diverge.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Startups are a little different. For startups, a design system can be a low priority, because everything tends to be wide open to radical and fast changes of direction. They rarely have the stability, security, budget, and time frames that established companies have. This isn’t to say startups shouldn’t be designing systematically; they just need to be more realistic about their priorities. That said… start as you mean to go on! If you create a design system from the start, you’ll avoid legacy problems later on.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+A recent trend is to bring design and development in-house. And the larger the company, the larger the product teams (for better or worse).&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+My time spent working with in-house design environments/people/teams/cultures taught me a lot about the importance of design systems, and the intricacies of designers, developers, and product managers working together.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Working on products that involve lots of people requires a different approach than projects with smaller, leaner teams. It’s more complicated, and there’s more that can go wrong. The expression, “too many cooks spoil the broth” becomes a little too real at times. Every member of the team has their own preferences about what typefaces, colors, buttons, formatting, spacing, frameworks, or naming conventions you should use.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+It gets messy, if you allow it.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Design systems bring structure, accountability, and order to this chaos.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;leading-the-way&quot;&gt;Leading the way&lt;/h3&gt;
+&lt;p&gt;For me, making the transition from freelance design into an in-house design leadership role was a learning experience, to say the least. Overseeing other people doing the work — or working with a team of people on the same product — is very different to being the one person doing the work!&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Design leadership and teamwork go beyond just handing off design mock-ups, style guides, and specs. You need to find a way to create — and effectively and openly communicate — common, shared design guidelines, so everyone works in the same direction. The alternative is everyone does their own thing — reinventing the wheel, bloating the code, and damaging the brand and product user experience. And sometimes, falling out in the process.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+When you work on a team, your design thinking is useless if only you know about it, or if it’s disruptively different from the approach of your colleagues. You need to work together in the same direction. As other chapters in this book will demonstrate, a design system genuinely helps you to do this.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;the-real-test&quot;&gt;The real test…&lt;/h3&gt;
+&lt;p&gt;The real test of a design system is whether the design and build mirror each other, and if you and your team consistently use the elements you establish rather than needlessly creating new ones.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+A successful design system liberates your team from reinventing the wheel. It allows you to focus on what really matters: learning and improving digital products to meet user and business goals. Heck, you might even create something amazing that you’re all proud of!&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Interested to read more? Buy the book here&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><category term="sample post" /><summary type="html">The path to success with a design system starts with every member of your team understanding what design systems are and how they can help. This understanding will help you all work better together, and it will help you pitch and gain support for creating a design system at your company. A design system is hard to summarise. It’s perhaps easier to explain why design systems are important, and what they help us to do, than to explain exactly what they are. However, here’s my attempt at a definition: What is a design system? Design systems bring order and consistency to digital products. They help to protect the brand, elevate the user experience, and increase the speed and efficiency of how we design and build products. They are a source of truth and a system of record for our design decisions. They hold us to high standards, keep teams on the same page, and help to onboard new team members. They document the why, when, where, and how.</summary></entry><entry><title type="html">Third Writing</title><link href="http://localhost:4000/third-writing" rel="alternate" type="text/html" title="Third Writing" /><published>2013-10-26T00:00:00+08:00</published><updated>2013-10-26T00:00:00+08:00</updated><id>http://localhost:4000/third-writing</id><content type="html" xml:base="http://localhost:4000/third-writing"></content><author><name></name></author><category term="sample post" /><summary type="html"></summary></entry><entry><title type="html">Forth Writing</title><link href="http://localhost:4000/forth-writing" rel="alternate" type="text/html" title="Forth Writing" /><published>2013-08-16T00:00:00+08:00</published><updated>2013-08-16T00:00:00+08:00</updated><id>http://localhost:4000/forth-writing</id><content type="html" xml:base="http://localhost:4000/forth-writing"></content><author><name></name></author><category term="sample post" /><summary type="html"></summary></entry><entry><title type="html">Fifth Writing</title><link href="http://localhost:4000/fifth-writing" rel="alternate" type="text/html" title="Fifth Writing" /><published>2013-08-12T00:00:00+08:00</published><updated>2013-08-12T00:00:00+08:00</updated><id>http://localhost:4000/fifth-writing</id><content type="html" xml:base="http://localhost:4000/fifth-writing"></content><author><name></name></author><category term="sample post" /><summary type="html"></summary></entry><entry><title type="html">Six Writing</title><link href="http://localhost:4000/sixth-writing" rel="alternate" type="text/html" title="Six Writing" /><published>2013-06-25T00:00:00+08:00</published><updated>2013-06-25T00:00:00+08:00</updated><id>http://localhost:4000/sixth-writing</id><content type="html" xml:base="http://localhost:4000/sixth-writing"></content><author><name></name></author><category term="sample post" /><summary type="html"></summary></entry></feed>

@@ -1,0 +1,73 @@
+.content {
+    display: table;
+    width: 100%;
+    height: fit-content;
+    padding: 100px 0;
+}
+.header {
+    justify-content: center;
+    width: 900px;
+    margin: 100px auto;
+    display: table;
+    height: fit-content;
+    position: relative;
+}
+.col1 {
+    float: left;
+    width: calc(50% - 50px);
+    margin-right: 100px;
+}
+.col2 {
+    margin-top: 150px;
+    float: left;
+    width: calc(50% - 50px);
+}
+.hello {
+    font-size: 100px;
+}
+.words {
+    font-size: 18px;
+    word-spacing: 10px;
+}
+.ey {
+    font-size: 150px;
+    line-height: 100px;
+}
+.up {
+    font-size: 150px;
+    text-align: center;
+    line-height: 150px;
+    margin-bottom: 50px;
+}
+.exp-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.resume {
+    width: 900px;
+    margin: 100px auto;
+}
+.resume .title {
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+.cat {
+    font-size: 34px;
+}
+.h2 {
+    font-size: 24px;
+    margin-left: 50px;
+}
+.h3 {
+    font-size: 18px;
+    margin-left: 100px;
+    color: #aaa;
+}
+.hr {
+    height: 1px;
+    width: 100%;
+    background: #333;
+    margin: 50px 0;
+}

@@ -1,0 +1,225 @@
+.content {
+    display: table;
+    width: 100%;
+    height: fit-content;
+    padding: 100px 0;
+}
+.header {
+    justify-content: center;
+    width: 900px;
+    margin: 100px auto;
+    display: table;
+    height: fit-content;
+    position: relative;
+}
+.word {
+    width: calc(50% - 50px);
+    margin-right: 50px;
+    float: left;
+}
+.welcome1 {
+    font-size: 150px;
+    line-height: 120px;
+    transform: translateX(-50px);
+}
+.welcome2 {
+    text-align: end;
+    font-size: 150px;
+    line-height: 120px;
+}
+.intro {
+    margin-top: 50px;
+    word-spacing: 10px;
+    color: #555;
+    line-height: 2;
+}
+.intro span{
+    font-weight: bold;
+    color: black;
+}
+.header .pic {
+    width: 50%;
+    height: 500px;
+    float: left;
+    background: gray;
+}
+.pic img {
+    width: 100%;
+    height: auto;
+}
+.detail {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: #f00658;
+    cursor: pointer;
+}
+.bk2 {
+    position: relative;
+    height: 700px;
+}
+.bk2::after {
+    content: "";
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    background: #fff3cd;
+    -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 9;
+}
+.bk {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 1100px;
+}
+.bk::after {
+    content: "";
+    width: 100%;
+    height: 1100px;
+    position: absolute;
+    top: 0;
+    background: #eee;
+    -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+    z-index: 9;
+}
+.margin {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+.project-gp, .writing-gp {
+    display: grid;
+    width: 1000px;
+    margin: 50px auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.col2 {
+    transform: translateY(80px);
+}
+.col3 {
+    transform: translateY(-120px);
+}
+.project-bk {
+    margin: 40px 20px;
+    height: 400px;
+    background: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.project-bk:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 3px #00000070;
+}
+.project-bk .title {
+    transition: 0.2s;
+}
+.project-bk:hover .title {
+    color: #f00658;
+}
+.project-bk .pic {
+    height: 45%;
+    background: red;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 98%, 93% 99%, 90% 98%, 77% 91%, 69% 93%, 65% 97%, 57% 99%, 50% 97%, 43% 95%, 38% 96%, 33% 99%, 27% 99%, 20% 96%, 15% 94%, 11% 97%, 8% 99%, 3% 99%, 0% 99%);
+}
+.project-bk .container {
+    width: calc(100% - 40px);
+    height: calc(55%);
+    padding: 20px;
+    position: relative;
+}
+.project-bk .job {
+    color: #333;
+}
+.project-bk .title {
+    font-size: 40px;
+}
+.project-bk .more {
+    position: absolute;
+    color: #f00658;
+    bottom: 20px;
+    left: 20px;
+}
+.split {
+    width: 1000px;
+    margin: 150px auto 50px auto;
+}
+.split .title {
+    font-size: 50px;
+    line-height: 1;
+    width: 600px;
+    margin-top: 50px;
+}
+.split .desc {
+    margin-top: 50px;
+    color: #999;
+}
+.writing-bk {
+    justify-content: center;
+    margin: 60px 20px;
+    height: fit-content;
+    cursor: pointer;
+}
+.writing-bk:hover .title {
+    color: #f00658;
+}
+.writing-bk .date {
+    font-size: 14px;
+    color: #555;
+}
+.writing-bk .title {
+    width: 60%;
+    font-size: 40px;
+    line-height: 1;
+    margin: 20px 0;
+    color: #4d3e3e;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.writing-bk .more {
+    margin-top: 20px;
+    color: #f00658;
+}
+.contact {
+    width: 1000px;
+    margin: 50px auto;
+}
+.contact .title {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 250px;
+}
+.social-gp {
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+}
+.social-item {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-right: 20px;
+}
+.social-item i {
+    width: 100%;
+    color: #f00658;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+.email {
+    font-size: 18px;
+    color: #f00658;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.email i {
+    margin-right: 10px;
+}
+.url {
+    display: none;
+}
