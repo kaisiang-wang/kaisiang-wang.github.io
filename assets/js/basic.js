@@ -1,16 +1,16 @@
 $('.menu-item').click(function() {
     switch($(this).text().trim().toLowerCase()) {
         case 'profile':
-            $(document).scrollTop($('.header').offset().top-100)
+            location.href = '/profile'
         break;
         case 'projects':
-            $(document).scrollTop($('.bk').offset().top - 160)
+            location.href = '/'
         break;
         case 'writings':
-            $(document).scrollTop($('.split').offset().top - 160)
+            location.href = '/'
         break;
         case 'let\'s work together':
-            $(document).scrollTop($('.contact').offset().top - 80)
+            location.href = '/'
         break;
     }
 })
