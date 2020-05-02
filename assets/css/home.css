@@ -338,12 +338,12 @@
 }
 @media (max-width: 500px) { 
     .header {
-        width: calc(100% - 20px);
-        margin: 100px 10px;
+        width: calc(100% - 40px);
+        margin: 100px 20px;
     }
     .split {
-        width: calc(100% - 20px);
-        margin: 150px 10px 50px 10px;
+        width: calc(100% - 40px);
+        margin: 150px 20px 50px 20px;
     }
     .project-gp {
         width: calc(100% - 20px);
