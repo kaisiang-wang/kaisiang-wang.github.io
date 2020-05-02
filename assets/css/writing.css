@@ -147,4 +147,10 @@ html {
         width: calc(100% - 20px);
         margin: 0 10px;
     }
+    .title {
+        font-size: 15vw;
+        width: calc(100% - 20px);
+        margin: 0 10px;
+        margin-top: 100px;
+    }
 }
