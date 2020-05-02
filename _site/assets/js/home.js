@@ -17,4 +17,8 @@ $('.menu-item').click(function() {
             $(document).scrollTop($('.contact').offset().top - 80)
         break;
     }
+    $('.menu').toggleClass('show')
+})
+$('.menu-btn').click(function() {
+    $('.menu').toggleClass('show')
 })

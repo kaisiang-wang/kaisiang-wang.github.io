@@ -14,3 +14,6 @@ $('.menu-item').click(function() {
         break;
     }
 })
+$('.menu-btn').click(function() {
+    $('.menu').toggleClass('show')
+})

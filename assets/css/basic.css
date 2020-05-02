@@ -13,6 +13,15 @@ html {
 a {
     text-decoration: none;
 }
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    color: #f00658;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
 .nav {
     position: fixed;
     height: 80px;
@@ -38,6 +47,7 @@ a {
     cursor: pointer;
     transition: 0.4s;
     border-bottom: 1px solid transparent;
+    white-space: nowrap;
 }
 .menu-item:hover .bot-border {
     width: 100%;
@@ -49,4 +59,37 @@ a {
     transition: 0.4s;
     transform: scaleX(1.2);
 }
+@media (max-width: 1080px) {
+    .menu {
+        width: calc(100% - 160px);
+        margin: 0 80px;
+    }
+}
+@media (max-width: 700px) {
+    .menu {
+        width: 100%;
+        margin: 0;
+        display: none;
+        box-shadow: 0 0 2px #f0065870;
+    }
+    .menu-item {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        background: white;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .show {
+        display: block;
+    }
+}
+@media (max-width: 500px) {
+    .menu-btn {
+        position: fixed;
+        top: 20px;
+        right: 10px;
+    }
+} 
 

@@ -19,15 +19,8 @@ comments: false
 		<div class="margin">
 			<div class="project-gp">
 				{% for project in site.categories.projects %}
-				{% if forloop.first %}
-				<div class="col1">
-				{% elsif forloop.index0 == 2 %}
-				</div>
-				<div class="col2">
-				{% elsif forloop.index0 == 4 %}
-				</div>
-				<div class="col3">
-				{% endif %}
+				{% assign remainder = forloop.index0 | modulo: 3 %}
+				{% if remainder == 0 %}
 				<div class="project-bk">
 					<div class="url">{{ site.url }}{{ project.url }}</div>
 					<div class="pic {{ project.color }}"></div>
@@ -37,6 +30,27 @@ comments: false
 						<div class="more">Learn More</div>
 					</div>
 				</div>
+				{% elsif remainder == 1 %}
+				<div class="project-bk col2">
+					<div class="url">{{ site.url }}{{ project.url }}</div>
+					<div class="pic {{ project.color }}"></div>
+					<div class="container">
+						<div class="job">Programmer</div>
+						<div class="title">{{ project.title }}</div>
+						<div class="more">Learn More</div>
+					</div>
+				</div>
+				{% elsif remainder == 2 %}
+				<div class="project-bk col3">
+					<div class="url">{{ site.url }}{{ project.url }}</div>
+					<div class="pic {{ project.color }}"></div>
+					<div class="container">
+						<div class="job">Programmer</div>
+						<div class="title">{{ project.title }}</div>
+						<div class="more">Learn More</div>
+					</div>
+				</div>
+				{% endif %}
 				{% endfor %}
 				</div>
 			</div>
@@ -51,36 +65,18 @@ comments: false
 			<div class="writing-gp">
 			{% assign sorted = (site.categories.writings | sort: 'date') | reverse %}
 			{% for post in sorted %}
-				{% assign remainder = forloop.index0 | modulo: 2 %}
-				{% if remainder == 0 %}
-					<div class="col">
-						<div class="writing-bk">
-							<div class="url">{{ site.url }}{{ post.url }}</div>
-							<div class="pic"></div>
-							<div class="container">
-								<div class="date">{{ post.date | date: "%B %d, %Y" }}</div>
-								<div class="title">{{ post.title }}</div>
-								<div class="more">
-									Read Now
-									<div class="bot-border"></div>
-								</div>
-							</div>
-						</div>
-				{% else %}
-						<div class="writing-bk">
-							<div class="url">{{ site.url }}{{ post.url }}</div>
-							<div class="pic"></div>
-							<div class="container">
-								<div class="date">{{ post.date | date: "%B %d, %Y" }}</div>
-								<div class="title">{{ post.title }}</div>
-								<div class="more">
-									Read Now
-									<div class="bot-border"></div>
-								</div>
-							</div>
+				<div class="writing-bk">
+					<div class="url">{{ site.url }}{{ post.url }}</div>
+					<div class="pic"></div>
+					<div class="container">
+						<div class="date">{{ post.date | date: "%B %d, %Y" }}</div>
+						<div class="title">{{ post.title }}</div>
+						<div class="more">
+							Read Now
+							<div class="bot-border"></div>
 						</div>
 					</div>
-				{% endif %}
+				</div>
 			{% endfor %}
 				<!--div class="col">
 					<div class="writing-bk">
