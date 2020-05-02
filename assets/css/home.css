@@ -309,7 +309,7 @@
         overflow: hidden;
     }
     .pic img {
-        transform: translateY(-250px);
+        transform: translateY(-35vw);
     }
     .project-gp {
         width: calc(100% - 80px);
