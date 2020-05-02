@@ -1,3 +1,6 @@
+$('.brand').click(function() {
+    location.href = '/'
+})
 $('.menu-item').click(function() {
     switch($(this).text().trim().toLowerCase()) {
         case 'profile':

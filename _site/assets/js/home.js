@@ -2,6 +2,9 @@ $('.writing-bk, .project-bk').click(function() {
     console.log($(this).find('.url').text())
     location.href = $(this).find('.url').text()
 })
+$('.brand').click(function() {
+    $(document).scrollTop(0)
+})
 $('.menu-item').click(function() {
     switch($(this).text().trim().toLowerCase()) {
         case 'profile':
