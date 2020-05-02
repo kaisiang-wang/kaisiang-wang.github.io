@@ -87,6 +87,7 @@ html {
     display: none;
     z-index: 1000;
     cursor: pointer;
+    box-shadow: 0 0 5px #00000070;
 }
 .title {
     margin-top: 100px;
@@ -97,6 +98,7 @@ html {
     text-transform: uppercase;
 }
 .detail {
+    width: 100%;
     margin-top: 50px;
     font-size: 20px;
 }
@@ -143,8 +145,20 @@ html {
     }
 }
 @media (max-width: 620px) {
+    .bar .menu-btn {
+        display: block;
+        right: 10px;
+        bottom: 50px;
+    }
     .content {
         width: calc(100% - 20px);
         margin: 0 10px;
+    }
+    .title {
+        font-size: 15vw;
+        width: 100%;
+    }
+    .back, .home {
+        font-size: 6vw;
     }
 }
